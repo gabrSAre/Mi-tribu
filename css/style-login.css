@@ -36,7 +36,7 @@ body{
 
 #container #login{
     width: 50%;
-    margin-top: 10px;
+    margin-top: 20px;
     
 }
 
@@ -76,7 +76,6 @@ body{
     margin:20px 0;
     font-size: 20px;
     color:white;
-
 } 
 
 .boton1{
