@@ -4,102 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear Tribu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .contenedor {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        label {
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 5px;
-            font-weight: bold;
-            color: #444;
-        }
-        input[type="text"], select, textarea {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            font-size: 14px;
-        }
-        textarea {
-            resize: vertical;
-            height: 80px;
-        }
-        .checkbox-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 5px;
-        }
-        .checkbox-group label {
-            font-weight: normal;
-            margin-top: 0;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .imagen-upload {
-            margin-top: 5px;
-        }
-        .imagen-upload input[type="file"] {
-            width: 100%;
-            padding: 8px;
-            border: 1px dashed #ccc;
-            background-color: #fafafa;
-            border-radius: 4px;
-        }
-        .preview-img {
-            max-width: 200px;
-            max-height: 150px;
-            margin-top: 10px;
-            border-radius: 4px;
-            display: none;
-        }
-        .preview-portada {
-            max-width: 100%;
-            max-height: 200px;
-            margin-top: 10px;
-            border-radius: 4px;
-            display: none;
-        }
-        .btn-crear {
-            display: block;
-            width: 100%;
-            margin-top: 25px;
-            padding: 12px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .btn-crear:hover {
-            background-color: #45a049;
-        }
-        .opcional {
-            font-weight: normal;
-            font-size: 12px;
-            color: #888;
-        }
-    </style>
+   <link rel="stylesheet" href="css/crear una tribu.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -156,13 +64,11 @@
             <label>Foto o Logo Representativo:</label>
             <div class="imagen-upload">
                 <input type="file" id="logo" name="logo" accept="image/*">
-                <img id="previewLogo" class="preview-img" alt="Vista previa del logo">
             </div>
 
             <label>Imagen de Portada:</label>
             <div class="imagen-upload">
                 <input type="file" id="portada" name="portada" accept="image/*">
-                <img id="previewPortada" class="preview-portada" alt="Vista previa de portada">
             </div>
 
             <label for="descripcion">Descripción Grupal: <span class="opcional">(opcional)</span></label>
@@ -172,64 +78,5 @@
 
         </form>
     </div>
-
-    <script>
-        // Vista previa del logo
-        document.getElementById('logo').addEventListener('change', function(e) {
-            const archivo = e.target.files[0];
-            if (archivo) {
-                const lector = new FileReader();
-                lector.onload = function(evento) {
-                    const preview = document.getElementById('previewLogo');
-                    preview.src = evento.target.result;
-                    preview.style.display = 'block';
-                };
-                lector.readAsDataURL(archivo);
-            }
-        });
-
-        // Vista previa de la portada
-        document.getElementById('portada').addEventListener('change', function(e) {
-            const archivo = e.target.files[0];
-            if (archivo) {
-                const lector = new FileReader();
-                lector.onload = function(evento) {
-                    const preview = document.getElementById('previewPortada');
-                    preview.src = evento.target.result;
-                    preview.style.display = 'block';
-                };
-                lector.readAsDataURL(archivo);
-            }
-        });
-
-        // Enviar formulario
-        document.getElementById('formTribu').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const nombre = document.getElementById('nombre').value;
-            const ciudad = document.getElementById('ciudad').value;
-            const sede = document.getElementById('sede').value;
-            const descripcion = document.getElementById('descripcion').value;
-
-            const hobbiesMarcados = document.querySelectorAll('input[name="hobbies"]:checked');
-            const hobbies = [];
-            hobbiesMarcados.forEach(function(h) {
-                hobbies.push(h.value);
-            });
-
-            if (hobbies.length === 0) {
-                alert('Por favor selecciona al menos un hobbie o foco.');
-                return;
-            }
-
-            alert('¡Tribu creada con éxito!\n\n' +
-                  'Nombre: ' + nombre + '\n' +
-                  'Ciudad: ' + ciudad + '\n' +
-                  'Sede: ' + sede + '\n' +
-                  'Hobbies: ' + hobbies.join(', ') + '\n' +
-                  'Descripción: ' + (descripcion || 'Sin descripción'));
-        });
-    </script>
-
 </body>
 </html>
