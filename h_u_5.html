@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de crear este archivo -->
+</head>
+
+<body>
+    <div class="container">
+        <h1>Personaliza tu Perfil</h1>
+        <form action="guardar_perfil.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="username">Nombre de Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="carrera">Carrera:</label>
+                <input type="text" id="carrera" name="carrera" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hobbies">Hobbies:</label>
+                <textarea id="hobbies" name="hobbies" placeholder="Escribe tus hobbies aquí..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="foto-perfil">Foto de Perfil:</label>
+                <input type="file" id="foto-perfil" name="foto-perfil" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="imagen-portada">Imagen de Portada:</label>
+                <input type="file" id="imagen-portada" name="imagen-portada" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label for="sexualidad">Sexualidad:</label>
+                <select id="sexualidad" name="sexualidad">
+                    <option value="heterosexual">Heterosexual</option>
+                    <option value="homosexual">Homosexual</option>
+                    <option value="bisexual">Bisexual</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pareja">Tengo pareja:</label>
+                <select id="pareja" name="pareja">
+                    <option value="sí">Sí</option>
+                    <option value="no">No</option>
+                    <option value="privado">Prefiero mantenerlo privado</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion">Descripción Personal (opcional):</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Agrega una descripción sobre ti..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="tribu">¿Quieres que te agreguen automáticamente a una tribu?</label>
+                <select id="tribu" name="tribu">
+                    <option value="sí">Sí</option>
+                    <option value="no">No, notificar y dar autorización.</option>
+                </select>
+            </div>
+
+            <button type="submit">Guardar Perfil</button>
+        </form>
+    </div>
+</body>
+
+</html>
