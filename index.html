@@ -1,19 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My tribe</title>
     <link rel="stylesheet" href="css/style-login.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     
     <div id="container">
-        <div id="logo">
+        <div id="grid1">
+           <div class="caja" id="logo">
+                <img src="img/LOGO.png" alt="Logo de My tribe">
+           </div>
+           <div class="caja" id="login">
+            
+                <div class="campos">
+                    <h1>Inicia sección en MY TRIBE</h1>
+                </div>
+            
+                <form action="principal.html" class="formularioLogin">
+                    <div class="campos">
+                        <label for="email">Correo electrónico</label>
+                        <input type="text" id="email" name="email" placeholder="user@cesde.net">
+                    </div>
+                    
+                    <div class="campos">
+                        <label for="contraseña">Contraseña</label>
+                        <input type="password" id="contraseña" name="contraseña" placeholder="1a2B34....." minlength="8">
+                    </div>
+                    <div class="campos">
+                        <button type="submit" class="boton">Iniciar sección</button>
+                    </div>
+                    
+                </form>
+                <div class="campos">
+                    <a href="passwordRecuperacion.html">¿Olvidaste tu contraseña?</a>
+                </div>
+                
+                <form action="#" class="formularioLogin">
+                    <div class="campos">
+                        <button type="submit" class="boton1">Crear cuenta</button>
+                    </div>
+                </form>
+                
+           </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+<!-- 
+<div id="logo">
             <img src="img/LOGO.png" alt="Logo de My tribe">
         </div>
 
@@ -36,11 +83,5 @@
                   <a href="passwordRecuperacion.html">¿Olvidaste tu contraseña?</a>
                 <button type="submit" class="boton1">Crear cuenta</button>
             </form>
-          
-        
-
         </div>
-    </div>
-
-</body>
-</html>
+-->
