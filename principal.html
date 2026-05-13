@@ -3,20 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/stylePrincipal.css">
     <title>My Tribe</title>
-
-    <style>
-        body{
-           
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-
-
-    </style>
-
 </head>
 <body>
     <div class="container">
+       
+        <div id="header">
+            <div id="logo">
+                <img src="/img/LOGO.png" alt="Logo de My Tribe">
+            </div>
+            <div id="nav">
+                <a href="#">Perfil</a>
+                <a href="#">Tribu</a>
+                <a href="#">Notificaciones</a>
+                <a href="#">Configuraciones</a>
+            </div>
+        </div>
+     
+
+        <div id="main">
+            <div id="aside-l">
+                
+                <img src="img/profile.png" alt="Imagen de perfil" id="perfil">
+                <form action="#" id="formulario">
+                    <input type="text" placeholder="Nombre" readonly>
+                    <input type="text" placeholder="Mi Tribu" readonly>
+                    <input type="text" placeholder="Mis Hobbies" readonly>
+                    <input type="text" placeholder="Técnica" readonly>  
+                </form>
+                <img src="img/pantalla.png" alt="Pantalla de Tribu" id="pantalla">
+            
+            
+            </div>
+          <div id="section-1">
+                <form action="#" id="formulario1">
+                    <input type="text" placeholder="Buscar" readonly>
+                </form>
+
+                <div id="articulo">
+                    <form action="#" id="formulario2">
+                        <div class="campos">
+                            <label for="archivo">Publica algo</label>
+                            <input type="file" id="archivo">
+                        </div> 
+                    </form>
+                    <img src="img/muro.png" alt="Muro de publicaciones">
+                    <div id="emogics">
+                         <img src="img/feliz.png" alt="imagen de emogic feliz">
+                         <img src="img/comprobado.png" alt="Imagen de check">
+                         <img src="img/email.png" alt="Imagen de correo">
+                        <img src="img/burbuja-de-chat.png" alt="Imagen de chat">
+                    </div>
+                </div>
+           </div>
+          <div id="aside-r">
+                <div class="ar2">
+                    <div class="input-ar">
+                        <h2>Chats</h2>
+                    </div>
+                    <div class="target-ar">
+                        <div>
+                            <h3>On line</h3>
+                        </div>
+                        <div>
+                            <p>User#1</p>
+                            <p>User#2</p>
+                            <p>User#3</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="ar2">
+                    <div class="input-ar">
+                        <h2>Chat Tribu</h2>
+                    </div>
+                    <div class="target-ar">
+                        <div>
+                            <h3>On line</h3>
+                        </div>
+                        <div>
+                            <p>User#1</p>
+                            <p>User#2</p>
+                            <p>User#3</p>
+                        </div>
+                    </div>
+                </div>
+          </div>
+        </div>
+
+    </div>
+</body>
+</html>
+
+
+  <!--   <div class="container">
 
         <div class="Encabezado">
             
@@ -142,6 +225,4 @@
                 </nav>
            </div>
        </div>
-    </div>
-</body>
-</html>
+    </div> -->
