@@ -1,0 +1,60 @@
+/* Contenedor del formulario */
+.form-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 20px;
+}
+
+/* Estilo del formulario */
+.tribu-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.tribu-form input,
+.tribu-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.tribu-form input:focus,
+.tribu-form textarea:focus {
+  border-color: #007acc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,122,204,0.3);
+}
+
+/* Botón */
+.btn {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background: #007acc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #005f99;
+}

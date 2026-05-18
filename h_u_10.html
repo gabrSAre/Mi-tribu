@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Tribu - My Tribe</title>
+  <link rel="stylesheet" href="h.u_10.css">
+</head>
+<body>
+  <header>
+    <h1>My Tribe</h1>
+    <nav>
+      <a href="principal.html">Inicio</a>
+      <a href="h_u_5.html">Tribus</a>
+      <a href="perfil.html">Mi Perfil</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <h2>Crear una nueva tribu</h2>
+      <form class="tribu-form">
+        <label for="nombre">Nombre de la tribu:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="ciudad">Ciudad de origen:</label>
+        <input type="text" id="ciudad" name="ciudad" required>
+
+        <label for="sede">Sede CESDE:</label>
+        <input type="text" id="sede" name="sede" required>
+
+        <label for="hobbies">Hobbies / Intereses:</label>
+        <input type="text" id="hobbies" name="hobbies" placeholder="Ej: música, deportes, cine">
+
+        <label for="logo">Logo de la tribu:</label>
+        <input type="file" id="logo" name="logo" accept="image/*">
+
+        <label for="portada">Imagen de portada:</label>
+        <input type="file" id="portada" name="portada" accept="image/*">
+
+        <label for="descripcion">Descripción grupal (opcional):</label>
+        <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+
+        <button type="submit" class="btn">Crear Tribu</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Tribe - Comunidad CESDE</p>
+  </footer>
+</body>
+</html>
