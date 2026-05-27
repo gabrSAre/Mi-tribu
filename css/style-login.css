@@ -110,7 +110,7 @@ button{
 #login h1{
     font-size:35px;
     text-align: left;
-    color:#03658C;
+    color:#45210d;
     font-weight: bold;
 }
 
@@ -124,7 +124,7 @@ button{
 
 .campos label{
     font-size: 25px;
-    color:#03658C;
+    color:#45210d;
     font-weight: bold;
     display: block;
     margin-bottom: 9px;
@@ -136,36 +136,38 @@ button{
 
 .campos input{
     width: 80%;
-    height: 70px;
-  /*  border: 3px solid #03658C;
-    background-color: #e2e8ea;
-    border-radius: 5px;*/
+    padding:18px 10px ;
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
-    color:#03658C;
+    color:#45210d;
     background-color:rgba(255,255,255,.1);
     box-shadow:
     5px 5px 10px rgba(89,56,37,.3);
     border: 1px solid #593825;
     border-radius:15px;
     cursor: pointer;
-    transition:  .3s ease;
+    transition: transform .3s ease, border .3s ease;
+
 
 }
 
 input::placeholder{
-    color:#03658C;
-    padding-left: 10px;
+    color:#45210d;
+   
 }
 
 input:hover{
  transform: scale(1.03);
 }
 
+input:focus{
+ border:2px solid #45210d;
+}
+
 #login a{
     font-size: 25px;
-    color:#02734A;
+    color:#45210d;
     text-align:left;
     display: block;
     font-weight:bold;
