@@ -33,6 +33,7 @@ li{
     color:#593825;
     font-weight:600;
     transition:transform .3s ease;
+    cursor: pointer;
 }
 
 h3:hover,
@@ -251,6 +252,13 @@ main{
 
     width:90px;
     margin-bottom:20px;
+    cursor: pointer;
+    transition:.3s;
+}
+
+
+.profile-img:hover{
+ transform:scale(1.1) ;
 
 }
 
