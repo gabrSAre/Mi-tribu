@@ -15,7 +15,10 @@ html {
 }
 
 body{
-    background-color: white;
+    background-image:url("/img/backmain.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
     
 }
 
@@ -99,7 +102,6 @@ button{
 #login{
     display: flex;
     flex-direction: column;
-    align-items:flex-center;
     justify-content: center;
 }
 
@@ -126,22 +128,39 @@ button{
     font-weight: bold;
     display: block;
     margin-bottom: 9px;
+    
 }
+
+
+
 
 .campos input{
     width: 80%;
     height: 70px;
-    border: 3px solid #03658C;
+  /*  border: 3px solid #03658C;
     background-color: #e2e8ea;
-    border-radius: 5px;
+    border-radius: 5px;*/
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: bold;
     color:#03658C;
+    background-color:rgba(255,255,255,.1);
+    box-shadow:
+    5px 5px 10px rgba(89,56,37,.3);
+    border: 1px solid #593825;
+    border-radius:15px;
+    cursor: pointer;
+    transition:  .3s ease;
+
 }
 
 input::placeholder{
     color:#03658C;
+    padding-left: 10px;
+}
+
+input:hover{
+ transform: scale(1.03);
 }
 
 #login a{
@@ -165,7 +184,11 @@ input::placeholder{
     font-size: 30px;
     font-weight: 600;
     color:white;
+    transition: .3s;
 } 
+
+
+
 
 .boton1{
     width: 81%;
@@ -176,6 +199,16 @@ input::placeholder{
     display: block;
     margin-top: 50px;
     font-size: 30px;
-     font-weight: 600;
+    font-weight: 600;
     color:white;
+    transition: .3s;
+}
+
+.boton1:hover{
+  transform: scale(1.03);
+
+}
+
+.boton:hover{
+     transform: scale(1.03);
 }
