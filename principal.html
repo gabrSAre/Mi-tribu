@@ -1,136 +1,409 @@
 <!doctype html>
 <html lang="es">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>My Tribe</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="/css/stylePrincipal.css">
 
-  </head>
-  <body>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
     <header>
-        <div id="h-container">
-            <div id="logo">
-                <img src="/img/LogoSmal.png" alt="Logo de My Tribe" width="120px">
-            </div>
-            <div id="nav">
-                <div class="icon">
-                    <a href="#"><img src="/img/inicio.png" alt="Imagen de Pluma tallada en madera" width="100px"></a>
-                    <a href="#" class="textoNav">Inicio</a>
-                </div>
-                <div class="icon">
-                        <a href="#"><img src="/img/Perfil.png" alt="Imagen de rostro de indio tallada en madera" width="100px"></a>
-                        <a href="#" class="textoNav">Perfil</a>
-                </div>
-                    
-                 <div class="icon">
-                        <a href="#"><img src="/img/Tribu.png" alt="Imagen de choza de indio en estilo de madera tallada" width="100px"></a>
-                        <a href="#" class="textoNav">Tribu</a>
+
+        <div class="container-fluid">
+
+            <div class="header-contenedor">
+
+                <!-- LOGO -->
+
+                <div class="logo-contenedor">
+
+                    <img src="/img/LogoSmal.png"
+                        alt="Logo de My Tribe"
+                        id="imagen">
+
                 </div>
 
-                <div class="icon">
-                        <a href="#"><img src="/img/salir.png" alt="Imagen de indio corriendo, imagen tallada en madera" width="100px"></a>
-                        <a href="#" class="textoNav">Salir</a>
-                </div>
+                <!-- NAV -->
+
+                <nav class="nav-contenedor">
+
+                    <ul class="menu-responsive">
+
+                        <li class="nav-item">
+
+                            <a href="#">
+                                <img src="/img/inicio.png"
+                                    alt="Inicio">
+                            </a>
+
+                            <a href="/principal.html">
+                                Inicio
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#">
+                                <img src="/img/Perfil.png"
+                                    alt="Perfil">
+                            </a>
+
+                            <a href="#">
+                                Perfil
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="#">
+                                <img src="/img/Tribu.png"
+                                    alt="Tribu">
+                            </a>
+
+                            <a href="#">
+                                Tribu
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a href="index.html">
+                                <img src="/img/salir.png"
+                                    alt="Salir">
+                            </a>
+
+                            <a href="index.html">
+                                Salir
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </nav>
+
             </div>
+
         </div>
+
     </header>
 
+    <!-- MAIN -->
 
+    <main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+        <div class="container-fluid">
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- COLUMNA IZQUIERDA -->
+
+                <div class="col-12 col-lg-3">
+
+                    <div class="card fondo tarjeta-responsive p-4">
+
+                        <img src="/img/profile.png"
+                            alt="Imagen de perfil"
+                            class="profile-img rounded-circle">
+
+                        <div class="card-body">
+
+                            <h3>
+                                <i class="bi bi-person"></i>
+                                Gabo
+                            </h3>
+
+                            <h4>
+                                <i class="bi bi-people"></i>
+                                Mi tribu
+                            </h4>
+
+                            <h4>
+                                <i class="bi bi-controller"></i>
+                                Mis hobbies
+                            </h4>
+
+                            <ul>
+                                <li>Leer</li>
+                                <li>Ir al Gym</li>
+                                <li>Ver Pelis</li>
+                                <li>Desconectarme</li>
+                            </ul>
+
+                            <h4>
+                                <i class="bi bi-braces"></i>
+                                Desarrollo de software
+                            </h4>
+
+                        </div>
+
+                        <div id="carouselLeft"
+                            class="carousel slide"
+                            data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="/img/img1.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img2.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img3.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMNA CENTRO -->
+
+                <div class="col-12 col-lg-5">
+
+                    <div class="card fondo tarjeta-responsive p-4">
+
+                        <form>
+
+                            <div class="contenedor-input mb-3">
+
+                                <i class="bi bi-search icono"></i>
+
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Buscar publicación">
+
+                            </div>
+
+                            <button class="btn boton">
+                                Buscar
+                            </button>
+
+                        </form>
+
+                        <div id="carouselCenter"
+                            class="carousel slide mt-4"
+                            data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="/img/img5.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img4.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img2.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- COLUMNA DERECHA -->
+
+                <div class="col-12 col-lg-3">
+
+                    <div class="card fondo tarjeta-responsive p-4">
+
+                        <h3 class="mb-3">
+                            Chats
+                        </h3>
+
+                        <form>
+
+                            <div class="contenedor-input mb-3">
+
+                                <i class="bi bi-search icono"></i>
+
+                                <input type="text"
+                                    class="form-control"
+                                    placeholder="Buscar chats">
+
+                            </div>
+
+                            <button class="btn boton">
+                                Buscar
+                            </button>
+
+                        </form>
+
+                        <div id="carouselRight"
+                            class="carousel slide mt-4"
+                            data-bs-ride="carousel">
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="/img/img5.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img4.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/img/img3.png"
+                                        class="d-block w-100"
+                                        alt="Imagen">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="container">
+
+        <div class="row text-center text-lg-start align-items-center">
+
+            <!-- INFORMACIÓN -->
+
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                <h3 class="footer-titulo">
+                    DTMLJ+
+                </h3>
+
+                <p class="footer-texto">
+                    Diseñadores de software de alta calidad
+                </p>
+
+                <p class="footer-copy">
+                    © 2026 DTMLJ+ <br>
+                    Todos los derechos reservados
+                </p>
+
+            </div>
+
+            <!-- CONTACTO -->
+
+            <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+
+                <h4 class="footer-subtitulo">
+                    Contacto
+                </h4>
+
+                <p class="footer-texto">
+                    Cel: 3196327022
+                </p>
+
+                <p class="footer-texto">
+                    Año de creación: 2026
+                </p>
+
+            </div>
+
+            <!-- REDES -->
+
+            <div class="col-12 col-lg-4">
+
+                <h4 class="footer-subtitulo">
+                    Redes sociales
+                </h4>
+
+                <div class="redes">
+
+                    <a href="https://facebook.com"
+                        target="_blank"
+                        class="red-social">
+
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+
+                    </a>
+
+                    <a href="https://instagram.com"
+                        target="_blank"
+                        class="red-social">
+
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+
+                    </a>
+
+                    <a href="https://wa.me/573196327022"
+                        target="_blank"
+                        class="red-social">
+
+                        <i class="bi bi-whatsapp"></i>
+                        WhatsApp
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
 </html>
 
-
-
-
-
-
-<!-- 
-<div class="container">
-       
-        <div id="header">
-            
-        </div>
-     
-
-        <div id="main">
-            <div id="aside-l">
-                
-                <img src="img/profile.png" alt="Imagen de perfil" id="perfil">
-                <form action="#" id="formulario">
-                    <input type="text" placeholder="Nombre" readonly>
-                    <input type="text" placeholder="Mi Tribu" readonly>
-                    <input type="text" placeholder="Mis Hobbies" readonly>
-                    <input type="text" placeholder="Técnica" readonly>  
-                </form>
-                <img src="img/pantalla.png" alt="Pantalla de Tribu" id="pantalla">
-            
-            
-            </div>
-          <div id="section-1">
-                <form action="#" id="formulario1">
-                    <input type="search" placeholder="Buscar">
-                </form>
-
-                <div id="articulo">
-                    <form action="#" id="formulario2">
-                        <div class="campos">
-                            <label for="archivo">Publica algo</label>
-                            <input type="file" id="archivo">
-                        </div> 
-                    </form>
-                    <img src="img/muro.png" alt="Muro de publicaciones">
-                    <div id="emogics">
-                         <img src="img/feliz.png" alt="imagen de emogic feliz">
-                         <img src="img/comprobado.png" alt="Imagen de check">
-                         <img src="img/email.png" alt="Imagen de correo">
-                        <img src="img/burbuja-de-chat.png" alt="Imagen de chat">
-                    </div>
-                </div>
-           </div>
-          <div id="aside-r">
-                <div class="ar2">
-                    <div class="input-ar">
-                        <h2>Chats</h2>
-                    </div>
-                    <div class="target-ar">
-                        <div>
-                            <h3>On line</h3>
-                        </div>
-                        <div>
-                            <p>User#1</p>
-                            <p>User#2</p>
-                            <p>User#3</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="ar2">
-                    <div class="input-ar">
-                        <h2>Chat Tribu</h2>
-                    </div>
-                    <div class="target-ar">
-                        <div>
-                            <h3>On line</h3>
-                        </div>
-                        <div>
-                            <p>User#1</p>
-                            <p>User#2</p>
-                            <p>User#3</p>
-                        </div>
-                    </div>
-                </div>
-          </div>
-        </div>
-
-    </div> -->
-
-
-
-        
-      
