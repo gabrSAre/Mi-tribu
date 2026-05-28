@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/HU-19.css">
+  
+  </head>
+    <title>My tribe</title>
+  </head>
+
+<body>
+    <div class="container">
+         
+        <div id="titulo">
+             <h1>Memorias Personales</h1>
+        </div>
+
+        <div id="caja">
+            <div id="profile">
+                <img src="img/profile.png" alt="Imagen de perfil" id="perfil" width="50px">
+                <h2>User Name</h2>
+            </div>
+
+            <div id="formulario">
+                <form action="#" id="form-1">
+                    <div id="areaTexto">
+                        <textarea name="texto-compartido" id="texto" cols="30" rows="1" placeholder="!Escribe algo¡"></textarea>
+                    </div>
+
+                    <div id="container-campos">
+                        <div class="campos">
+                            <label for="Fotos" title="!Sube una foto o imagen¡">
+                                <img src="/img/foto.png" alt="icono de fotos" width="50px">
+                            </label>
+                            <input type="file" id="Fotos" accept="image/*" multiple hidden>
+                        </div>
+                        <div class="campos">
+                            <label for="Audio" title="!Graba un audio¡">
+                            <img src="/img/audio.png" alt="icono de audio" width="50px">
+                            </label>
+                            <input type="file" id="Audio" accept="audio/*" hidden>
+                        </div>
+                        <div class="campos">
+                            <label for="Video" title="!Sube un video¡">
+                                <img src="/img/video.png" alt="icono de video" width="50px">
+                            </label> 
+                            <input type="file" id="Video" accept="video/*" hidden>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="form-2">
+                <button class="boton" form="form-1">Publicar</button>
+                <a class="boton" href="#" id="cancel">Cancelar</a>
+            </div>
+            
+        </div>
+        
+    </div>
+</body>
+</html>
