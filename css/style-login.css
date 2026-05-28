@@ -15,7 +15,7 @@ html {
 }
 
 body{
-    background-image:url("/img/backmain.png");
+    background-image:url("../img/backmain.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;

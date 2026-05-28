@@ -67,7 +67,7 @@ a{
 
 header{
 
-    background-image:url("/img/backheader.png");
+    background-image:url("../img/backheader.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -204,7 +204,7 @@ main{
 
     min-height:100vh;
 
-    background-image:url("/img/backmain.png");
+    background-image:url("../img/backmain.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -349,21 +349,6 @@ main{
 
 }
 
-/* -------------------------------- */
-/* FOOTER */
-/* -------------------------------- */
-
-footer{
-
-   
-
-    background-image:url("/img/backfooter.png");
-
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-position:center;
-
-}
 
 
 /* -------------------------------- */
@@ -372,7 +357,7 @@ footer{
 
 .footer{
 
-    background-image:url("/img/backfooter.png");
+    background-image:url("../img/backfooter.png");
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -646,7 +631,7 @@ footer{
 
         padding-top:20px;
 
-        background-image:url("/img/backmainvertical.png");
+        background-image:url("../img/backmainvertical.png");
 
     }
 
