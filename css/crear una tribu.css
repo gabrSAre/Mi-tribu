@@ -36,7 +36,9 @@ a{
 
 .container {
     max-width: 600px;
+    height: 900px;
     margin: auto;
+    margin-bottom: 80px;
     padding: 20px;
     background-color: rgba(255, 255, 255,0.1);
     border: 1px solid #593825;
@@ -48,6 +50,7 @@ a{
 h1 {
     text-align: center;
     color: #593825;
+    padding-top: 60px;
 }
 
 /* Estilos para los grupos de formulario */
@@ -114,6 +117,17 @@ button:hover {
 
 a{
     margin-left: 20px;
+    
   
+}
+
+@media(max-width:400px){
+
+    a{
+       
+         margin-left: 115px;
+         
+    }
+    
 }
 
