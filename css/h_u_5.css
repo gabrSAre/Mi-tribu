@@ -111,3 +111,10 @@ button {
 button:hover {
     background-color: #0C5944; /* Un tono más oscuro de verde */
 }
+
+a{
+    font-size: 40px;
+    font-weight: bold;
+    color:#45210d;
+    margin-left: 20px;
+}
